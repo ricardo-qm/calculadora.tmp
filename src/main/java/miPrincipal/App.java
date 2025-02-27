@@ -8,11 +8,13 @@ public class App {
         double resta = calculadora.restar(5, 3);
         double multiplicacion = calculadora.multiplicar(5, 3);
         double division = calculadora.dividir(5, 3);
+        double seno = calculadora.seno(Math.PI / 2);
 
         System.out.println("Suma: " + suma);
         System.out.println("Resta: " + resta);
         System.out.println("Multiplicación: " + multiplicacion);
         System.out.println("División: " + division);
+        System.out.println("Seno: " + seno);
 
         // Prueba de división por cero
         try {

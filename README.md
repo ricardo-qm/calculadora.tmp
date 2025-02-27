@@ -1,6 +1,8 @@
 # Mi Proyecto Java
 
-Este es un proyecto básico de Java utilizando Maven. El proyecto incluye una clase principal y pruebas unitarias.
+Este programa es una calculadora básica que realiza operaciones aritméticas simples como suma, resta, multiplicación y división.
+
+
 
 ## Estructura del Proyecto
 
@@ -10,10 +12,6 @@ mi-proyecto-java
 │   ├── main
 │   │   └── java
 │   │       └── miPrincipal
-│   │           └── App.java
-│   └── test
-│       └── java
-│           └── miPrincipal
 │               └── AppTest.java
 ├── pom.xml
 └── README.md

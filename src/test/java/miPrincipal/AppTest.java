@@ -1,5 +1,3 @@
-// Crea pruebas unitarias para una clase Calculadora.java que se encuentra en el paquete miPrincipal
-
 package miPrincipal;
 
 import org.junit.Test;
@@ -41,5 +39,11 @@ public class AppTest {
     @Test(expected = IllegalArgumentException.class)
     public void testDivisionPorCero() {
         calculadora.dividir(6, 0);
+    }
+
+    @Test
+    public void testSeno() {
+        double resultado = calculadora.seno(Math.PI / 2);
+        Assert.assertEquals(1, resultado, 0.001);
     }
 }
