@@ -19,4 +19,8 @@ public class Calculadora {
         }
         return a / b;
     }
+
+    public double seno(double angulo) {
+        return Math.sin(angulo);
+    }
 }
