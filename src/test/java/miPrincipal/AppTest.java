@@ -46,4 +46,27 @@ public class AppTest {
         double resultado = calculadora.seno(Math.PI / 2);
         Assert.assertEquals(1, resultado, 0.001);
     }
+
+    @Test
+    public void testCoseno() {
+        double resultado = calculadora.coseno(0);
+        Assert.assertEquals(1, resultado, 0.001);
+        
+        resultado = calculadora.coseno(Math.PI);
+        Assert.assertEquals(-1, resultado, 0.001);
+    }
+
+    @Test
+    public void testTangente() {
+        double resultado = calculadora.tangente(Math.PI / 4);
+        Assert.assertEquals(1, resultado, 0.001);
+        
+        resultado = calculadora.tangente(0);
+        Assert.assertEquals(0, resultado, 0.001);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testTangenteIndefinida() {
+        calculadora.tangente(Math.PI / 2);
+    }
 }
