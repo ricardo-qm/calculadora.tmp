@@ -23,4 +23,16 @@ public class Calculadora {
     public double seno(double angulo) {
         return Math.sin(angulo);
     }
+
+    public double coseno(double angulo) {
+        return Math.cos(angulo);
+    }
+
+    public double tangente(double angulo) {
+        double coseno = Math.cos(angulo);
+        if (Math.abs(coseno) < 1e-10) {
+            throw new IllegalArgumentException("Tangente indefinida para este ángulo");
+        }
+        return Math.tan(angulo);
+    }
 }
