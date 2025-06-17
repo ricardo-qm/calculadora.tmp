@@ -30,7 +30,7 @@ public class Calculadora {
 
     public double tangente(double angulo) {
         double coseno = Math.cos(angulo);
-        if (Math.abs(coseno) < 1e-10) {
+        if (Math.abs(coseno) < TOLERANCE) {
             throw new IllegalArgumentException("Tangente indefinida para este ángulo");
         }
         return Math.tan(angulo);
