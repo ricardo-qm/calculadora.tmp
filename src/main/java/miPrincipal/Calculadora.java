@@ -35,4 +35,9 @@ public class Calculadora {
         }
         return Math.tan(angulo);
     }
+
+    public double exponencial(double a){
+        double resultado = Math.exp(a);
+        return  resultado;
+    }
 }
