@@ -69,4 +69,16 @@ public class AppTest {
     public void testTangenteIndefinida() {
         calculadora.tangente(Math.PI / 2);
     }
+
+    @Test
+    public void testExponencialCero(){
+        double resultado = calculadora.exponencial(0);
+        Assert.assertEquals("Exponential of 0 should be 1", 1, resultado, 0.001);
+    }
+
+    @Test
+    public void testExponencialUnoEsEuler(){
+        double resultado = calculadora.exponencial(1);
+        Assert.assertEquals(Math.E, resultado, 0.001);
+    }
 }
