@@ -73,7 +73,7 @@ public class AppTest {
     @Test
     public void testExponencialCero(){
         double resultado = calculadora.exponencial(0);
-        Assert.assertEquals(1, resultado, 0.001);
+        Assert.assertEquals("Exponential of 0 should be 1", 1, resultado, 0.001);
     }
 
     @Test
