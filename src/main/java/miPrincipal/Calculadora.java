@@ -37,7 +37,6 @@ public class Calculadora {
     }
 
     public double exponencial(double a){
-        double resultado = Math.exp(a);
-        return  resultado;
+        return Math.exp(a);
     }
 }
