@@ -69,4 +69,23 @@ public class AppTest {
     public void testTangenteIndefinida() {
         calculadora.tangente(Math.PI / 2);
     }
+
+    @Test
+    public void testExponencial() {
+        // Test e^0 = 1
+        double resultado = calculadora.exponencial(0);
+        Assert.assertEquals(1, resultado, 0.001);
+        
+        // Test e^1 = e ≈ 2.718
+        resultado = calculadora.exponencial(1);
+        Assert.assertEquals(Math.E, resultado, 0.001);
+        
+        // Test e^(-1) = 1/e ≈ 0.368
+        resultado = calculadora.exponencial(-1);
+        Assert.assertEquals(1.0 / Math.E, resultado, 0.001);
+        
+        // Test e^2 ≈ 7.389
+        resultado = calculadora.exponencial(2);
+        Assert.assertEquals(Math.exp(2), resultado, 0.001);
+    }
 }
