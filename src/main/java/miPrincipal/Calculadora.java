@@ -1,6 +1,7 @@
 package miPrincipal;
 
 public class Calculadora {
+    private static final double TOLERANCE = 1e-10;
     public double sumar(double a, double b) {
         return a + b;
     }
@@ -34,5 +35,9 @@ public class Calculadora {
             throw new IllegalArgumentException("Tangente indefinida para este ángulo");
         }
         return Math.tan(angulo);
+    }
+
+    public double exponencial(double x) {
+        return Math.exp(x);
     }
 }

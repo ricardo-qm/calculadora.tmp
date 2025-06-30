@@ -15,6 +15,9 @@ public class App {
         double coseno = calculadora.coseno(0);          // 0 grados
         double tangente = calculadora.tangente(Math.PI / 4); // 45 grados
 
+        // Función exponencial
+        double exponencial = calculadora.exponencial(1); // e^1 = e
+
         // Mostrar resultados
         System.out.println("Suma: " + suma);
         System.out.println("Resta: " + resta);
@@ -23,6 +26,7 @@ public class App {
         System.out.println("Seno(90°): " + seno);
         System.out.println("Coseno(0°): " + coseno);
         System.out.println("Tangente(45°): " + tangente);
+        System.out.println("Exponencial(1): " + exponencial);
 
         // Prueba de errores
         try {
